@@ -27,7 +27,7 @@ for day in forecast_list:
     count += 1
 
     to_graph[this_day] = day['temperature']
-print(to_graph)
+pp.pprint(to_graph)
 
 # expected output should look something like:
 #   {'Aug-24-2021': 12,
