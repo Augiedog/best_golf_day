@@ -26,7 +26,7 @@ for day in forecast_list:
     this_day = f"{today[0:4]}{current_date}{today[6:]}"
     count += 1
 
-    to_graph[this_day] = day['temperature']
+    to_graph[this_day] = day['wind']
 pp.pprint(to_graph)
 
 # expected output should look something like:
@@ -37,8 +37,8 @@ pp.pprint(to_graph)
 
 # Remember to always label the axes of your graph!
 plt.xlabel('Date')
-# plt.xlabel('Wind')
-plt.ylabel('Temperature')
+plt.ylabel('Wind')
+# plt.ylabel('Temperature')
 
 print('to_graph keys: ', to_graph.keys())
 print('to_graph values: ', to_graph.values())
